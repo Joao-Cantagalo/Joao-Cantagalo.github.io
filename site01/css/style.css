@@ -45,4 +45,25 @@ header ul {
 
 .laranja {
     background-color: #ca4e30;
+    height: 400px;
+}
+
+.branca {
+    width: 100%;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 930px;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.box {
+    border: 1px solid black;
+    width: 310px;
+    margin: 0px;
+    padding: 30px;
+    box-sizing: border-box;
 }
