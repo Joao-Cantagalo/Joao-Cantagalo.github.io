@@ -1,0 +1,23 @@
+.box {
+    border: 1px solid #F00;
+    width: 180px;
+    height: 500px;
+}
+@media (max-width:480px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 470px;
+
+    }
+}
+
+@media (min-width:481px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+}

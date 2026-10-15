@@ -1,11 +1,17 @@
-@media (min-width: 991px) {
     * {
         font-family: Arial, Helvetica, sans-serif;
     }
 
+@media (min-width: 991px) {
+    
     header, main, footer {
     width: 800px;
     margin:auto;
+    }
+
+    header, header ul {
+    display: flex;
+    justify-content: space-between;
     }
 
     header {
@@ -22,6 +28,22 @@
 
     li {
         margin: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        background-color: #ccc;
+        color: #333;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .title-mobile {
+        transform: translateY
+    }
+
+    .hero {
+        text-align: center;
     }
 
     .botao {
@@ -87,6 +109,10 @@
         margin: 20px;
         animation: girar 5s linear;
         animation-iteration-count: infinite;
+    }
+
+    footer {
+        text-align: center;
     }
 
     @keyframes pulsar {
