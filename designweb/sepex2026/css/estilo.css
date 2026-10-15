@@ -1,100 +1,130 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
+@media (min-width: 991px) {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header, main, footer {
+    width: 800px;
+    margin:auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: right;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    .botao {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 15px;
+        background-color: rgb(14, 98, 255);
+        transition: 500ms;
+    }
+
+    .botao:hover {
+        transform: scale(1.05);
+        transition: 500ms;
+        color:#ffe798;
+        background-color: rgb(204, 38, 255);
+        box-shadow: 5px 5px 10px #888;
+    }
+
+    .programacao {
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        width: 800px;
+    }
+
+    .cards article {
+        justify-content: space-around;
+        border: 1px solid #000;
+        width: 250px;
+        box-shadow: 2px 3px 7px #999;
+        transition: .5s ease;
+    }
+
+    .cards article:hover {
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 2px 3px 15px #666;
+        transition: .5s ease;
+    }
+
+    .destaque {
+        animation: pulsar .5s ease;
+        animation-iteration-count: infinite;
+    }
+
+    .destaque:hover {
+        animation: none;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 2px 3px 15px #666;
+        transition: .5s ease;
+    }
+
+    h1 {
+        text-align: center;
+        animation: titulo 1s ease;
+    }
+
+    .icone {
+        margin: 20px;
+        animation: girar 5s linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes pulsar {
+        0% {transform: scale(1);}
+        50% {transform: scale(1.05);}
+        100% {transform: scale(1);}
+    }
+
+    @keyframes titulo {
+        0% {opacity: 0; transform: translateY(-20px);}
+        100% {opacity: 1; transform: translateY(0px);}
+    }
+
+    @keyframes girar {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(360deg);}
+    }
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-}
+@media (max-width: 480px) {
 
-ul {
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: right;
-}
+    header, main, footer {
+        width: 100%;
+    }
 
-li {
-    margin: 10px;
-}
+    .programacao {
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+    }
 
-.botao {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 15px;
-    background-color: rgb(14, 98, 255);
-    transition: 500ms;
-}
+    .programacao article {
+        border: 1px solid #000;
+        box-shadow: 2px 3px 5px #666;
+        width: 95vw;
+    }
 
-.botao:hover {
-    transform: scale(1.05);
-    transition: 500ms;
-    color:#ffe798;
-    background-color: rgb(204, 38, 255);
-    box-shadow: 5px 5px 10px #888;
-}
-
-.programacao {
-    text-align: center;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-    width: 1000px;
-}
-
-.cards article {
-    justify-content: space-around;
-    border: 1px solid #000;
-    width: 250px;
-    box-shadow: 2px 3px 7px #999;
-    transition: .5s ease;
-}
-
-.cards article:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 2px 3px 15px #666;
-    transition: .5s ease;
-}
-
-.destaque {
-    animation: pulsar .5s ease;
-    animation-iteration-count: infinite;
-}
-
-.destaque:hover {
-    animation: none;
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 2px 3px 15px #666;
-    transition: .5s ease;
-}
-
-h1 {
-    text-align: center;
-    animation: titulo 1s ease;
-}
-
-.icone {
-    margin: 20px;
-    animation: girar 5s linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes pulsar {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.05);}
-    100% {transform: scale(1);}
-}
-
-@keyframes titulo {
-    0% {opacity: 0; transform: translateY(-20px);}
-    100% {opacity: 1; transform: translateY(0px);}
-}
-
-@keyframes girar {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    .destaque {
+        animation: a;
+    }
 }
