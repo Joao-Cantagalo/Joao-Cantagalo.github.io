@@ -11,18 +11,13 @@ h1 {
 
 h2 {
     color: #55453A;
+    text-align:center;
 }
 
 nav a {
-    padding: 5px;
     text-decoration: none;
     background-color: #55453A;
     color: #FFEBD8;
-    border-radius: 10px;
-}
-
-.centro {
-    align-items: center;
 }
 
 ul {
@@ -33,7 +28,7 @@ ul {
 
 img {
     width:100%;
-    max-width:700px;
+    max-width:44em;
     display:block;
     margin:20px auto;
     border-radius:10px;
@@ -43,47 +38,124 @@ header {
     text-align:center;
 }
 
-main {
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
+@media (min-width: 72rem) {
+    main {
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    main ul li {
+        display:flex;
+        flex-direction:row;
+        border: solid #BFAE9F 2px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    .desc {
+        width: 500px;
+    }
+
+    main section {
+        padding: 10px;
+        border: 2px solid #55453A;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    footer {
+        box-sizing: border-box;
+        width:100%;
+        bottom:0;
+    }
+
+    nav {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 5px;
+        margin: 15px;
+        border-radius: 10px;
+    }
 }
 
-main ul li {
-    display:flex;
-    flex-direction:row;
-    border: solid #BFAE9F 2px;
-    border-radius: 15px;
-    margin-top: 10px;
+@media (min-width: 48rem) and (max-width: 72rem) {
+    main {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main ul li {
+        display:flex;
+        flex-direction:column;
+        border: solid #BFAE9F 2px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
+
+    main section {
+        padding: 10px;
+        border: 2px solid #55453A;
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    footer {
+        box-sizing: border-box;
+        width:100%;
+        bottom:0;
+    }
+
+    nav {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 5px;
+        margin: 15px;
+        border-radius: 10px;
+    }
 }
 
-.desc {
-    width: 500px;
-}
+@media (max-width: 48rem) {
+    main {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 
-main section {
-    padding: 10px;
-    border: 2px solid #55453A;
-    border-radius: 10px;
-    margin: 10px;
-}
+    main ul li {
+        display:flex;
+        flex-direction:column;
+        border: solid #BFAE9F 2px;
+        border-radius: 15px;
+        margin-top: 10px;
+    }
 
-footer {
-    box-sizing: border-box;
-    width:100%;
-    bottom:0;
-}
+    main section {
+        padding: 10px;
+        border: 2px solid #55453A;
+        border-radius: 10px;
+        margin: 10px;
+    }
 
-nav {
-    justify-content:center;
-    display:flex;
-    flex-direction:row;
-}
+    nav {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-nav a {
-    margin:15px;
-}
-
-h2 {
-    text-align:center;
+    nav a {
+        padding: 5px 10px;
+        margin: 15px;
+        border-radius: 10px;
+    }
 }
