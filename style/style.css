@@ -4,6 +4,7 @@
     --light-gray: #3c3d46;
     --dark-white: #bdbdbd;
     --blue: #0050e4;
+    --light-blue: #0084ff;
 }
 
 * {
@@ -60,10 +61,21 @@ ul {
 
 li a {
     margin: 20px;
+    transition: 500ms;
     text-decoration: none;
     color: #fff;
     padding: 10px;
     background-color: var(--blue);
+    border-radius: 5px;
+}
+
+li a:hover {
+    margin: 20px;
+    transition: 500ms;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    background-color: var(--light-blue);
     border-radius: 5px;
 }
 
