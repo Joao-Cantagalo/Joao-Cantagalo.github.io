@@ -1,7 +1,37 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #d7d8e7;
 }
 
 img {
 border-radius: 10px;
+}
+
+.card {
+    background-color: #fff;
+    width: 700px;
+    height: 500px;
+    padding: 15px;
+    border: 1px solid #C8BEDB;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #ada4bd;
+}
+
+.sec-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.card h2 {
+    font-weight: normal;
+    margin: 0px 10px 0px 10px;
+}
+
+.card a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #0051ff;
+    border-radius: 7px;
+    padding: 10px 20px;
 }

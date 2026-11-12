@@ -1,0 +1,9 @@
+a) A tag HTML5 utilizada para representar o conteúdo principal da página é: main.
+
+b) A tag indicada para agrupar links de navegação é: nav.
+
+c) No Bootstrap, a classe utilizada para criar um contêiner com largura responsiva é: .container.
+
+d) A classe Bootstrap utilizada para organizar elementos em uma linha do sistema de grid é: .row.
+
+e) A classe Bootstrap utilizada para criar uma coluna que ocupa metade da largura disponível em telas médias é: col-md-6.
